@@ -760,6 +760,7 @@ div.is-open {
     row-gap: 72px;
   }
   .section-three__column {
+    flex-basis: 100%;
   }
 
   /* section-four */
