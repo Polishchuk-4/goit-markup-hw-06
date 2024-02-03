@@ -77,7 +77,7 @@ fieldset {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.02em;
 }
 .title-two {
   color: #2e2f42;
@@ -678,6 +678,16 @@ div.is-open {
   background-color: #404bbf;
 }
 
+/* common media  */
+
+@media (max-width: 768px) {
+  .section-four__column {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+      0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+      0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  }
+}
+
 /* media max-width: 320px */
 
 .header-mobile-svg {
@@ -760,10 +770,22 @@ div.is-open {
     row-gap: 72px;
   }
   .section-three__column {
-    flex-basis: 100%;
+    max-width: 264px;
   }
 
   /* section-four */
+
+  .section-four {
+    padding: 96px 0;
+  }
+  .section-four__column {
+    flex-basis: 100%;
+  }
+  .section-four__image {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+  }
 }
 
 /* @media max-width: 768px */
