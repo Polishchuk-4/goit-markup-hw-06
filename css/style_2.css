@@ -125,7 +125,6 @@ fieldset {
 .button:focus {
   background-color: #404bbf;
 }
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -137,6 +136,9 @@ fieldset {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+div.is-open {
+  visibility: visible;
 }
 
 /*-------- header --------*/
@@ -483,4 +485,109 @@ fieldset {
   cursor: pointer;
   background-color: #4d5ae5;
   border-radius: 4px;
+}
+
+/* mobile-menu */
+
+.mobile-navigation-container {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 320px;
+  height: 100vh;
+  padding: 72px 24px 40px 24px;
+  transform: translateX(-50%);
+  background-color: #fff;
+  z-index: 10;
+  visibility: hidden;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-close-transparent {
+  background-color: transparent;
+}
+.btn-close:hover,
+.btn-close:focus {
+  background-color: #404bbf;
+  border: none;
+  fill: #fff;
+}
+.btn-icon-close {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-navigation {
+  margin-bottom: auto;
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.mobile-menu-link {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: rgb(46, 47, 66);
+}
+.mobile-menu-link-active {
+  color: rgb(64, 75, 191);
+}
+.mobile-menu-address {
+  margin-bottom: 48px;
+}
+.mobile-menu-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mobile-menu-link-small {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: rgb(67, 68, 85);
+}
+.mobile-menu-link-small-active {
+  color: rgb(77, 90, 229);
+}
+
+.mobile-menu-icons-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mobile-menu-icon-container {
+  width: 40px;
+  height: 40px;
+}
+.mobile-menu-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu-icon {
+  fill: #fff;
 }

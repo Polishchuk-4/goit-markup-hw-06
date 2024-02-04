@@ -537,7 +537,7 @@ div.is-open {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window-btn {
+.btn-close {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -553,16 +553,14 @@ div.is-open {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-window-btn:hover,
-.modal-window-btn:focus {
+.btn-close:hover,
+.btn-close:focus {
   background-color: #404bbf;
   border: none;
   fill: #fff;
 }
-.modal-window-icon {
+.btn-icon-close {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-window-icon {
 }
 .modal-window-label {
   font-weight: 500;
