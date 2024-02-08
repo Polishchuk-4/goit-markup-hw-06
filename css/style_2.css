@@ -1021,7 +1021,8 @@ div.is-open {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  /* fot */
+  /*------- footer -------*/
+
   .footer .container {
     max-width: 1158px;
     justify-content: space-between;
@@ -1029,5 +1030,9 @@ div.is-open {
   }
   .footer__column:not(:last-child) {
     margin-bottom: 0;
+  }
+  .footer__link:hover,
+  .footer__link:focus {
+    background-color: #31d0aa;
   }
 }
